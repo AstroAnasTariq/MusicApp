@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.musicapp.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/settingsTopMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/settingsMenuNowIsPlaying"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/category_now_is_playing"
+                android:text="@string/now_is_playing"
+                android:textColor="@android:color/white"
+                tools:ignore="ButtonStyle,UnusedAttribute" />
+
+            <Button
+                android:id="@+id/settingsMenuAlbums"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/category_albums"
+                android:text="@string/albums_name"
+                android:textColor="@android:color/white"
+                tools:ignore="ButtonStyle,UnusedAttribute" />
+
+            <Button
+                android:id="@+id/settingsMenuArtist"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/category_artists"
+                android:text="@string/artist"
+                android:textColor="@android:color/white"
+                tools:ignore="ButtonStyle,UnusedAttribute" />
+
+            <Button
+                android:id="@+id/settingsMenuMusicStore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/category_music_store"
+                android:text="@string/music_store"
+                android:textColor="@android:color/white"
+                tools:ignore="ButtonStyle,UnusedAttribute" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/little_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/little_margin"
+                    android:layout_marginRight="@dimen/little_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/e_mail_login_settings"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EmailAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:labelFor="@id/EmailAddress"
+                        android:inputType="textEmailAddress" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/little_margin"
+                    android:layout_marginRight="@dimen/little_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/password_settings"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/Password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:labelFor="@id/Password"
+                        android:inputType="textPassword" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/little_margin"
+                        android:layout_marginRight="@dimen/little_margin"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonRegister"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/colorAccent"
+                            android:drawableStart="@drawable/ic_person_add_white_18dp"
+                            android:text="@string/settings_register_message"
+                            android:textColor="@android:color/white"
+                            tools:ignore="ButtonStyle,UnusedAttribute" />
+
+                        <Button
+                            android:id="@+id/buttonLogin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/colorAccent"
+                            android:drawableStart="@drawable/ic_vpn_key_white_18dp"
+                            android:text="@string/settings_login_message"
+                            android:textColor="@android:color/white"
+                            tools:ignore="ButtonStyle,UnusedAttribute" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/loginViaFacebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/little_margin"
+                        android:layout_marginRight="@dimen/little_margin"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="@string/login_via_facebook_settings_button_name"
+                        android:textColor="@android:color/white"
+                        tools:ignore="UnusedAttribute" />
+
+                    <Button
+                        android:id="@+id/loginViaGoogle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/little_margin"
+                        android:layout_marginRight="@dimen/little_margin"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:text="@string/login_via_google_settings_button_name"
+                        android:textColor="@android:color/white"
+                        tools:ignore="UnusedAttribute" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

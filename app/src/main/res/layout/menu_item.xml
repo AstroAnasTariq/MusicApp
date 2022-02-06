@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/little_margin"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:minHeight="88dp">
+
+    <ImageView
+        android:id="@+id/coverOfAlbum1"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/small"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/artist1_name"
+        android:src="@drawable/adele" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coverOfAlbum1"
+        android:layout_marginBottom="@dimen/little_margin"
+        android:layout_marginLeft="@dimen/little_margin"
+        android:layout_marginRight="@dimen/little_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameOfBand1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/run_album1"
+            android:textSize="@dimen/size_title_of_album"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/artist1_name"
+            android:textSize="@dimen/size_title_of_song"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/addToPlayListAlbumOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:contentDescription="@string/playlists"
+                android:src="@drawable/ic_playlist_add_white_18dp"
+                tools:ignore="UnusedAttribute" />
+
+            <ImageButton
+                android:id="@+id/playAlbum1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:contentDescription="@string/play"
+                android:src="@drawable/ic_play_arrow_white_18dp"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

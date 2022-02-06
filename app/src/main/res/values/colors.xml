@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0277BD</color>
+    <color name="colorPrimaryDark">#01579B</color>
+    <color name="colorAccent">#0091EA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#F0F0F0</color>
+    <color name="black">#000000</color>
+    <color name="category_now_is_playing">#1565C0</color>
+    <color name="category_albums">#0091EA</color>
+    <color name="category_artists">#1565C0</color>
+    <color name="category_music_store">#0091EA</color>
+    <color name="category_settings">#0091EA</color>
+</resources>

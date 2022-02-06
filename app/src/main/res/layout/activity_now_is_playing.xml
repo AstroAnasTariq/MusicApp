@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/abstract3" />
+
+    <ImageView
+        android:id="@+id/playlist_button"
+        android:contentDescription="@string/playlists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/between"
+        android:src="@drawable/ic_playlist_play_white_36dp" />
+
+    <TextView
+        android:id="@+id/song_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/big"
+        android:layout_marginTop="@dimen/large"
+        android:fontFamily="cursive"
+        android:text="@string/faded"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_below="@+id/playlist_button"
+        android:layout_marginTop="47dp"
+        android:contentDescription="@string/faded"
+        android:scaleType="centerCrop"
+        android:src="@drawable/faded" />
+
+    <ImageView
+        android:id="@+id/shuffleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/profile_image"
+        android:layout_below="@id/profile_image"
+        android:contentDescription="@string/shuffle"
+        android:paddingTop="@dimen/between"
+        android:src="@drawable/ic_shuffle_white_36dp" />
+
+    <ImageView
+        android:id="@+id/repeatButton"
+        android:contentDescription="@string/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/profile_image"
+        android:layout_below="@id/profile_image"
+        android:paddingTop="@dimen/between"
+        android:src="@drawable/ic_repeat_white_36dp" />
+
+    <ImageView
+        android:id="@+id/sound_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/sound"
+        android:paddingTop="@dimen/between"
+        android:src="@drawable/ic_volume_up_white_36dp" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shuffleButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:max="255"
+        android:progress="100" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/small"
+        android:alpha="0.9"
+        android:orientation="horizontal"
+        android:padding="@dimen/between">
+
+        <ImageView
+            android:id="@+id/favorite_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small"
+            android:contentDescription="@string/favorite_button"
+            android:src="@drawable/ic_favorite_white_48dp" />
+
+        <ImageView
+            android:id="@+id/previousSongButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/between"
+            android:contentDescription="@string/previous"
+            android:src="@drawable/ic_skip_previous_white_48dp" />
+
+        <ImageView
+            android:id="@+id/playSongButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/between"
+            android:layout_marginRight="@dimen/between"
+            android:contentDescription="@string/play"
+            android:src="@drawable/ic_play_arrow_white_48dp" />
+
+        <ImageView
+            android:id="@+id/nextSongButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/between"
+            android:contentDescription="@string/next"
+            android:src="@drawable/ic_skip_next_white_48dp" />
+
+        <ImageView
+            android:id="@+id/albums_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/small"
+            android:contentDescription="@string/previous"
+            android:src="@drawable/ic_album_white_48dp" />
+
+    </LinearLayout>
+</RelativeLayout>

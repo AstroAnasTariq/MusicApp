@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/settingsTopMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/settingsMenuNowIsPlaying"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_now_is_playing"
+            android:text="@string/now_is_playing"
+            android:textColor="@android:color/white"
+            tools:ignore="ButtonStyle,UnusedAttribute" />
+
+        <Button
+            android:id="@+id/settingsMenuAlbums"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_albums"
+            android:text="@string/albums_name"
+            android:textColor="@android:color/white"
+            tools:ignore="ButtonStyle,UnusedAttribute" />
+
+        <Button
+            android:id="@+id/settingsTopMenuSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#1565C0"
+            android:text="@string/settings"
+            android:textColor="@android:color/white"
+            tools:ignore="ButtonStyle,UnusedAttribute" />
+
+        <Button
+        android:id="@+id/settingsMenuMusicStore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="@color/category_music_store"
+        android:text="@string/music_store"
+        android:textColor="@android:color/white"
+        tools:ignore="ButtonStyle,UnusedAttribute" />
+        <Button
+            android:id="@+id/settingsTopMenuArtist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#1565C0"
+            android:text="@string/artist"
+            android:textColor="@android:color/white"
+            tools:ignore="ButtonStyle,UnusedAttribute" />
+
+    </LinearLayout>
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+</LinearLayout>

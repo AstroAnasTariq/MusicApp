@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="faded">Faded</string>
+    <string name="playlists">playlists</string>
+    <string name="songname">songName</string>
+    <string name="alanwalker">alanWalker</string>
+    <string name="shuffle">shuffle</string>
+    <string name="repeat">repeat</string>
+    <string name="like">like</string>
+    <string name="previous">previous</string>
+    <string name="play">play</string>
+    <string name="black">blackBackground</string>
+    <string name="next">next</string>
+    <string name="albums">Albums</string>
+    <string name="sound">sound</string>
+    <string name="now_is_playing">Now Is Playing</string>
+    <string name="artist">Artist</string>
+    <string name="music_store">Store</string>
+    <string name="settings">Settings</string>
+    <string name="albums_name">Albums</string>
+    <string name="artist1_name">Adele</string>
+    <string name="run_album1">25</string>
+    <string name="e_mail_login_settings">E-Mail/Login</string>
+    <string name="password_settings">Password</string>
+    <string name="settings_register_message">REGISTER</string>
+    <string name="settings_login_message">LOGIN</string>
+    <string name="login_via_facebook_settings_button_name">LOGIN VIA FACEBOOK</string>
+    <string name="login_via_google_settings_button_name">LOGIN VIA GOOGLE</string>
+    <string name="details">details</string>
+    <string name="buy">buy</string>
+    <string name="read_more_button_name">Read More</string>
+    <string name="favorite_button">favorite button</string>
+</resources>
